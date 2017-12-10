@@ -12,7 +12,7 @@
         $red = $_GET['red'];
         $green = $_GET['green'];
         $blue = $_GET['blue'];
-        //echo "$red $green $blue";
+        echo "$red $green $blue";
         $handle = fopen("led_status.txt", "w");
         fwrite($handle , "$red $green $blue");
         fclose($handle);
